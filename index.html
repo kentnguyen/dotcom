@@ -23,14 +23,79 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#timeline_mnsfw").hide();
+      $("button#clean").click(function(){
+        $("#timeline_clean").show();
+        $("#timeline_mnsfw").hide();
+        $("button#clean").removeClass('btn-light').addClass('btn-secondary');
+        $("button#mnsfw").addClass('btn-light').removeClass('btn-secondary');
+      });
+      $("button#mnsfw").click(function(){
+        $("#timeline_clean").hide();
+        $("#timeline_mnsfw").show();
+        $("button#mnsfw").removeClass('btn-light').addClass('btn-secondary');
+        $("button#clean").addClass('btn-light').removeClass('btn-secondary');
+      });
+    });
+  </script>
 </head>
 
 <body class='container-fluid'>
-  <div class='row'>
-    <div class='col-6'>
-      <h1>[Kent Nguyen]</h1>
+  <div class='row no-gutters'>
+    <div class='col-sm-8'>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          [Kent Nguyen <small class='text-muted'>beta</small>]
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div> -->
+      </nav>
+
+      
+      <div>
+        <div class="my-4 text-center">
+          <div class="btn-group btn-group-sm" role="group">
+            <button type="button" id="clean" class="btn btn-secondary">Clean version</button>
+            <button type="button" id="mnsfw" class="btn btn-light">Honest version</button>
+          </div>
+          
+          <a href="http://sg.linkedin.com/in/nguyenkent" target="_blank" class="btn btn-sm btn-light mx-4">
+              <img class="align-top" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" title="LinkedIn" height="20px"/>
+              On LinkedIn
+          </a>
+
+        </div>
+        <img id="timeline_clean" class="img-fluid" src="img/timeline.jpg" />
+        <img id="timeline_mnsfw" class="img-fluid" src="img/timeline_commentary.jpg" />
+      </div>
+
+      <div class="text-center">
+        Find me on 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" title="Telegram" height="24px"/>
+        <code name="contact">/kentnguyen</code>
+
+        <br/>
+
+        <a href="https://bit.ly/2LZHO6S" target="_blank"><img src="img/quote.png" class="my-4" title="quam minimum credula postero" height="36px"></a>
+      </div>
+
     </div>
-    <iframe src="http://lightwidget.com/widgets/c7c578b8be065328ab1b6377e2092e9b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget col-4" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+    <iframe src="http://lightwidget.com/widgets/c7c578b8be065328ab1b6377e2092e9b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget col-sm-4" style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
   </div>
 
