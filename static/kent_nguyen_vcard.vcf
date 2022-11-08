@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Kent Nguyen
+N;CHARSET=UTF-8:Nguyen;Kent;;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:kent@alphabits.team
+TEL;TYPE=WORK,VOICE:+84888317000
+TITLE;CHARSET=UTF-8:Founder/Technologist
+ORG;CHARSET=UTF-8:Alpha Bits
+NOTE;CHARSET=UTF-8:Technology Innovation as a Service
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/nguyenkent/
+REV:2022-11-07T01:47:39.033Z
+END:VCARD
